@@ -1,6 +1,6 @@
 # Pollen LSTM - Kratke upute
 
-Ovaj projekt koristi LSTM neuronsku mrežu za predviđanje koncentracije peludi na temelju meteoroloških varijabli.
+Ovaj projekt koristi LSTM model za predviđanje koncentracije peludi na temelju meteoroloških varijabli i povijesnih podataka koncentracija peludi.
 
 ## Struktura projekta
 - `data_lux/` - koncentracije peludi i meteorološki podaci za Luksemburg
