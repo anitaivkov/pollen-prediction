@@ -1,0 +1,15 @@
+dataset: vk
+target: Artemisia
+run_date: 2026-02-16T09:38:33.098321
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 1.320
+rmse: 1.911
+min: 0.000
+median: 0.000
+max: 77.000

@@ -1,0 +1,15 @@
+dataset: vk
+target: Corylus
+run_date: 2026-02-16T09:43:41.549050
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 0.540
+rmse: 0.903
+min: 0.000
+median: 0.000
+max: 59.000
