@@ -27,7 +27,7 @@ Za svaku biljku rezultati se spremaju u podmapu, npr. `models_vk/ambrosia/`:
 - Za predikciju na novim podacima koristi se spremljeni model i scaler.
 - Za svaku biljku koristi se 3 meteorološke varijable: temp_max, pressure, wind (i njihove forecast vrijednosti koje su za sada duplikati iz datoteke weather.csv, plan je implementirati prave weather forecast varijable).
 
-## Autor
+## Autorica
 Anita Ivkov, 2026.
 
 Završni rad s naslovom "Razvoj i evaluacija modela strojnog učenja za predviđanje koncentracije peluda".
