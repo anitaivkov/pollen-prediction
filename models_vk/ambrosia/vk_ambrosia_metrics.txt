@@ -1,6 +1,6 @@
 dataset: vk
 target: Ambrosia
-run_date: 2026-02-16T09:36:17.951879
+run_date: 2026-02-28T23:06:54.307108
 date_range: 2005-02-22 to 2023-10-16
 rows: 4419
 features: 8
@@ -8,8 +8,9 @@ seq_len: 7
 horizon: 1
 train_samples: 3088
 test_samples: 1324
-mae: 22.102
-rmse: 52.889
+mae: 30.926
+rmse: 61.618
+r2: 0.1344
 min: 0.000
 median: 0.000
 max: 1099.000

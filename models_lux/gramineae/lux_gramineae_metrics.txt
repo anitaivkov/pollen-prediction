@@ -1,0 +1,16 @@
+dataset: lux
+target: Gramineae
+run_date: 2026-03-01T12:26:57.496137
+date_range: 1996-07-01 to 2018-03-16
+rows: 6092
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 4259
+test_samples: 1826
+mae: 13.775
+rmse: 30.853
+r2: 0.2065
+min: 0.000
+median: 0.000
+max: 586.000

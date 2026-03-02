@@ -1,0 +1,17 @@
+dataset: vk
+target: Fraxinus
+scenario: baseline
+run_date: 2026-03-01T14:19:44.838742
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 2.6218
+rmse: 5.3256
+r2: -0.1206
+min: 0.000
+median: 0.000
+max: 182.000

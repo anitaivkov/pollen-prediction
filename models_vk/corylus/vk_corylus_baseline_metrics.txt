@@ -1,0 +1,17 @@
+dataset: vk
+target: Corylus
+scenario: baseline
+run_date: 2026-03-01T14:21:07.529405
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 0.7126
+rmse: 1.0387
+r2: -2.4629
+min: 0.000
+median: 0.000
+max: 59.000

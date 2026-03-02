@@ -8,6 +8,7 @@ from typing import List, Tuple
 
 import numpy as np
 import pandas as pd
+from sklearn.metrics import r2_score
 from sklearn.preprocessing import MinMaxScaler
 import joblib
 
@@ -153,6 +154,7 @@ def main() -> None:
         validation_split=0.2,
         epochs=args.epochs,
         batch_size=args.batch_size,
+        shuffle=False,
         callbacks=callbacks,
         verbose=1,
     )
@@ -168,6 +170,7 @@ def main() -> None:
 
     mae = np.mean(np.abs(inv_y - inv_yhat))
     rmse = np.sqrt(np.mean((inv_y - inv_yhat) ** 2))
+    r2 = r2_score(inv_y, inv_yhat)
 
 
     model_path = output_dir / f"{dataset_name}_{target_slug}_lstm.keras"
@@ -190,11 +193,12 @@ def main() -> None:
         f.write(f"test_samples: {len(X_test)}\n")
         f.write(f"mae: {mae:.3f}\n")
         f.write(f"rmse: {rmse:.3f}\n")
+        f.write(f"r2: {r2:.4f}\n")
         f.write(f"min: {target_stats['min']:.3f}\n")
         f.write(f"median: {target_stats['50%']:.3f}\n")
         f.write(f"max: {target_stats['max']:.3f}\n")
 
-    print(f"MAE: {mae:.3f} | RMSE: {rmse:.3f}", flush=True)
+    print(f"MAE: {mae:.3f} | RMSE: {rmse:.3f} | R²: {r2:.4f}", flush=True)
     print(f"Saved: {model_path}", flush=True)
     print(f"Saved: {scaler_path}", flush=True)
     print(f"Saved: {log_path}", flush=True)

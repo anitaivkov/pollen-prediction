@@ -1,0 +1,17 @@
+dataset: vk
+target: Betula
+scenario: baseline
+run_date: 2026-03-01T14:16:52.506459
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 9.1120
+rmse: 19.6954
+r2: 0.0091
+min: 0.000
+median: 0.000
+max: 776.000

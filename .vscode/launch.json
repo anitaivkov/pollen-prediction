@@ -1,0 +1,156 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "VK – Ambrosia",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/pollen_lstm_simple.py",
+            "args": [
+                "--pollen",
+                "data_vk/pollen_vk.csv",
+                "--weather",
+                "data_vk/weather_vk.csv",
+                "--weather2",
+                "data_vk/weather_vk.csv",
+                "--target",
+                "Ambrosia",
+                "--output",
+                "models_vk"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe"
+        },
+        {
+            "name": "VK – Artemisia",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/pollen_lstm_simple.py",
+            "args": [
+                "--pollen",
+                "data_vk/pollen_vk.csv",
+                "--weather",
+                "data_vk/weather_vk.csv",
+                "--weather2",
+                "data_vk/weather_vk.csv",
+                "--target",
+                "Artemisia",
+                "--output",
+                "models_vk"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe"
+        },
+        {
+            "name": "VK – Quercus",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/pollen_lstm_simple.py",
+            "args": [
+                "--pollen",
+                "data_vk/pollen_vk.csv",
+                "--weather",
+                "data_vk/weather_vk.csv",
+                "--weather2",
+                "data_vk/weather_vk.csv",
+                "--target",
+                "Quercus",
+                "--output",
+                "models_vk"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe"
+        },
+        {
+            "name": "LUX – Gramineae",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/pollen_lstm_simple.py",
+            "args": [
+                "--pollen",
+                "data_lux/pollen.csv",
+                "--weather",
+                "data_lux/weather.csv",
+                "--weather2",
+                "data_lux/weather2.csv",
+                "--target",
+                "Gramineae",
+                "--output",
+                "models_lux"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe"
+        },
+        {
+            "name": "Train All VK – baseline",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/train_all_vk.py",
+            "args": [
+                "--scenario", "baseline"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe"
+        },
+        {
+            "name": "Train All VK – oracle_forecast",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/train_all_vk.py",
+            "args": [
+                "--scenario", "oracle_forecast"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe"
+        },
+        {
+            "name": "Train All VK – lstm_forecast",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/train_all_vk.py",
+            "args": [
+                "--scenario", "lstm_forecast"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe"
+        },
+        {
+            "name": "Weather Forecaster – oracle",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/weather_forecaster.py",
+            "args": [
+                "--mode", "oracle"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe"
+        },
+        {
+            "name": "Weather Forecaster – lstm",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/weather_forecaster.py",
+            "args": [
+                "--mode", "lstm"
+            ],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe"
+        }
+    ]
+}

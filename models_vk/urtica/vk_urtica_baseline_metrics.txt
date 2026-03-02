@@ -1,0 +1,17 @@
+dataset: vk
+target: Urtica
+scenario: baseline
+run_date: 2026-03-01T14:22:45.321922
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 13.7268
+rmse: 24.5266
+r2: 0.1623
+min: 0.000
+median: 4.000
+max: 569.000
