@@ -47,6 +47,7 @@ BATCH_SIZE_DEFAULT = 365
 
 def load_weather(path: Path, weather_cols: List[str]) -> pd.DataFrame:
     df = pd.read_csv(path)
+    df.columns = df.columns.str.strip()
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
     df = df.dropna(subset=["Date"]).sort_values("Date").reset_index(drop=True)
     for c in weather_cols:
@@ -147,6 +148,9 @@ def generate_lstm_forecast(
 
     n_vars = len(weather_cols)
 
+    # Create model_dir before model.fit() so CSVLogger can write the log file
+    model_dir.mkdir(parents=True, exist_ok=True)
+
     model = keras.Sequential([
         keras.layers.Input(shape=(seq_len, n_vars)),
         keras.layers.LSTM(64, return_sequences=True),
@@ -169,7 +173,6 @@ def generate_lstm_forecast(
     )
 
     # Save model + scaler
-    model_dir.mkdir(parents=True, exist_ok=True)
     model.save(model_dir / "weather_lstm_forecaster.keras")
     joblib.dump(
         {"scaler": scaler, "weather_cols": weather_cols, "seq_len": seq_len, "horizon": horizon},
@@ -237,6 +240,7 @@ def main() -> None:
 
     # Detect available weather columns
     raw = pd.read_csv(args.weather, nrows=0)
+    raw.columns = raw.columns.str.strip()
     weather_cols = [c for c in WEATHER_COLS_VK if c in raw.columns]
     if not weather_cols:
         raise ValueError(f"No known weather columns found in {args.weather}.")

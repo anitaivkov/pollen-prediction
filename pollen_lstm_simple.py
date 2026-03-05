@@ -15,6 +15,7 @@ import joblib
 
 def load_csv(path: Path) -> pd.DataFrame:
     df = pd.read_csv(path)
+    df.columns = df.columns.str.strip()
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
     df = df.dropna(subset=["Date"]).sort_values("Date")
     return df

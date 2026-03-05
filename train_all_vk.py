@@ -50,6 +50,7 @@ MIN_NONZERO_DEFAULT = 50   # skip species with fewer non-zero training samples
 
 def load_csv(path: Path) -> pd.DataFrame:
     df = pd.read_csv(path)
+    df.columns = df.columns.str.strip()
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce")
     df = df.dropna(subset=["Date"]).sort_values("Date").reset_index(drop=True)
     return df
