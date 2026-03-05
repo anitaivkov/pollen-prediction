@@ -1,0 +1,17 @@
+dataset: vk
+target: Platanus
+scenario: lstm_forecast
+run_date: 2026-03-02T09:47:02.709425
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 1.2954
+rmse: 2.8968
+r2: -0.0321
+min: 0.000
+median: 0.000
+max: 75.000

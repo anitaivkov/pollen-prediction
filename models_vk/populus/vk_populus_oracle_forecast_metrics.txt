@@ -1,0 +1,17 @@
+dataset: vk
+target: Populus
+scenario: oracle_forecast
+run_date: 2026-03-02T09:20:45.995251
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 2.4035
+rmse: 6.2790
+r2: 0.1883
+min: 0.000
+median: 0.000
+max: 113.000

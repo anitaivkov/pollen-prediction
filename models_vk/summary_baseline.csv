@@ -1,7 +1,4 @@
-target 
-(39 trained, 
-95 skipped/
-errors),        status , scenario, train_samples, test_samples, mae                  , rmse                , r2                    , median, max   , reason
+target ,        status , scenario, train_samples, test_samples, mae                  , rmse                , r2                    , median, max   , reason
 Ambrosia      , ok     , baseline,        3088.0,       1324.0, 28.391575902906      , 56.70321256515525   , 0.26697334034929354   ,    0.0, 1099.0, 
 Artemisia     , ok     , baseline,        3088.0,       1324.0,  0.9386559965094591  ,  1.591442092041734  , -0.5307763146309337   ,    0.0,   77.0, 
 Alnus         , ok     , baseline,        3088.0,       1324.0,  0.8692495167985899  ,  2.7128284469241795 , -0.021432038181324442 ,    0.0,  315.0, 

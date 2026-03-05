@@ -1,0 +1,17 @@
+dataset: vk
+target: Humulus
+scenario: lstm_forecast
+run_date: 2026-03-02T09:50:59.180539
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 0.5514
+rmse: 1.3928
+r2: 0.0910
+min: 0.000
+median: 0.000
+max: 31.000

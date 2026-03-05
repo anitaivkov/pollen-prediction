@@ -1,0 +1,135 @@
+target        , status , scenario     , train_samples, test_samples, mae                  , rmse                 , r2                    , median, max   , reason
+Ambrosia      , ok     , lstm_forecast,        3088.0,       1324.0, 22.279869094496632   , 51.97509370172493    , 0.3841215585787694    ,    0.0, 1099.0, 
+Artemisia     , ok     , lstm_forecast,        3088.0,       1324.0,  0.8875262250321364  ,  1.5427998232394058  , -0.4386303352253855   ,    0.0,   77.0, 
+Alnus         , ok     , lstm_forecast,        3088.0,       1324.0,  1.3272792742077826  ,  2.8190504926142372  , -0.10298732934755783  ,    0.0,  315.0, 
+Betula        , ok     , lstm_forecast,        3088.0,       1324.0,  9.534674651791367   , 18.709200299682777   , 0.10587092123939967   ,    0.0,  776.0, 
+Carpinus      , ok     , lstm_forecast,        3088.0,       1324.0,  2.1424384897889914  ,  7.8738853359683505  , 0.0045968476938672564 ,    0.0,  168.0, 
+Castanea      , ok     , lstm_forecast,        3088.0,       1324.0,  0.7214921381000255  ,  1.2054375746747201  , -0.35988630745868533  ,    0.0,   29.0, 
+Quercus       , ok     , lstm_forecast,        3088.0,       1324.0,  2.640482838135466   ,  6.505621649410134   , 0.11120248134962762   ,    0.0,  109.0, 
+Chenopodium   , ok     , lstm_forecast,        3088.0,       1324.0,  0.6132066616636569  ,  1.180120720906197   , 0.22369973418203315   ,    0.0,   16.0, 
+Acer          , ok     , lstm_forecast,        3088.0,       1324.0,  0.1302790800925468  ,  0.6389833751476672  , 0.02293968817096459   ,    0.0,   16.0, 
+Fraxinus      , ok     , lstm_forecast,        3088.0,       1324.0,  2.2128604177583933  ,  5.043309154684746   , -0.0049576363427126235,    0.0,  182.0, 
+Fagus         , ok     , lstm_forecast,        3088.0,       1324.0,  0.2700410726511136  ,  0.6990056693025886  , -0.10632446550577024  ,    0.0,   16.0, 
+Aesculus      , ok     , lstm_forecast,        3088.0,       1324.0,  0.37810352547347453 ,  0.9708168806263406  , 0.0362103069850126    ,    0.0,   44.0, 
+Larix         , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=6<50
+Corylus       , ok     , lstm_forecast,        3088.0,       1324.0,  0.6255639781786785  ,  0.9612600240490288  , -1.965669396319313    ,    0.0,   59.0, 
+Juglans       , ok     , lstm_forecast,        3088.0,       1324.0,  0.9306712376482762  ,  2.965277777756273   , 0.2594700800489068    ,    0.0,   48.0, 
+Ulmus         , ok     , lstm_forecast,        3088.0,       1324.0,  0.673167004540149   ,  1.2903252832587664  , -0.042523481808946384 ,    0.0,   33.0, 
+Urtica        , ok     , lstm_forecast,        3088.0,       1324.0, 12.941254903250401   , 23.637185762103318   , 0.22191107975319724   ,    4.0,  569.0, 
+Rumex         , ok     , lstm_forecast,        3088.0,       1324.0,  0.5270383846509943  ,  1.078560641218249   , 0.009159136809419821  ,    0.0,   14.0, 
+Populus       , ok     , lstm_forecast,        3088.0,       1324.0,  2.280632215688143   ,  6.30646855592334    , 0.18117482406720709   ,    0.0,  113.0, 
+Plantago      , ok     , lstm_forecast,        3088.0,       1324.0,  0.8334447455555876  ,  1.6485659726412558  , 0.0013771041297171438 ,    0.0,   24.0, 
+Platanus      , ok     , lstm_forecast,        3088.0,       1324.0,  1.2953999830305076  ,  2.8967599722562487  , -0.032051669031425645 ,    0.0,   75.0, 
+Salix         , ok     , lstm_forecast,        3088.0,       1324.0,  2.5394880484200146  ,  6.828716400775804   , -0.020423538330913926 ,    0.0,  199.0, 
+Filipendula   , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=13<50
+Sambucus      , ok     , lstm_forecast,        3088.0,       1324.0,  0.36062572259467174 ,  0.5800784617836705  , -0.3388793100538252   ,    0.0,   32.0, 
+Tilia         , ok     , lstm_forecast,        3088.0,       1324.0,  0.8633731464956313  ,  4.025004386970223   , -0.0037033489014901555,    0.0,   59.0, 
+Abies         , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Aeculus       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Ailnthus      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Amaranthus    , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=12<50
+Anthriscus    , ok     , lstm_forecast,        3088.0,       1324.0,  0.02825025454117126 ,  0.044693629310151924, -1.6467161735517335   ,    0.0,    2.0, 
+Aster         , ok     , lstm_forecast,        3088.0,       1324.0,  0.4587273454364654  ,  0.7729496671082646  , -18.89736289858651    ,    0.0,   31.0, 
+Atriplex      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=6<50
+Begonia       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=10<50
+Bellis        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=32<50
+Brassica      , ok     , lstm_forecast,        3088.0,       1324.0,  0.36198567192976183 ,  1.0455172109056554  , 0.014972381753044273  ,    0.0,   19.0, 
+Brassicaceae  , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=19<50
+Callistemon   , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Campanula     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=30<50
+Canabis       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=28<50
+Carex         , ok     , lstm_forecast,        3088.0,       1324.0,  0.09894053785698742 ,  0.27160671819782983 , -0.033059910535533366 ,    0.0,    5.0, 
+Carya         , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=3<50
+Celtis        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Centaurea     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=6<50
+Cetaurea      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=3<50
+Clematis      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Coryllus      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=11<50
+Crategus      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Cucurbita     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Cupresssus    , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=49<50
+Cupressus     , ok     , lstm_forecast,        3088.0,       1324.0,  1.6100838414908265  ,  4.555035018052709   , 0.041355676291184196  ,    0.0,  212.0, 
+Cyperus       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Dahlia        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Daucus        , ok     , lstm_forecast,        3088.0,       1324.0,  0.21033555321575473 ,  0.3722479678600438  , -0.007834825310118365 ,    0.0,   12.0, 
+Daucus c.     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=12<50
+Daucus carota , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=22<50
+Dianthus      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=8<50
+Erica         , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Erigeron      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=3<50
+Eupatorium    , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=13<50
+Euphorbia     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=8<50
+Forsitia      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Forsythia     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=17<50
+Forsytia      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=3<50
+Fresia        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Galium        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=30<50
+Gallium       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Helianthus    , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=9<50
+Herachleum    , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Heracleum     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=9<50
+Humulus       , ok     , lstm_forecast,        3088.0,       1324.0,  0.551409569402926   ,  1.3927910543508417  , 0.09097928060122207   ,    0.0,   31.0, 
+Iva           , ok     , lstm_forecast,        3088.0,       1324.0,  0.10063760321562001 ,  0.12529165879403492 , -19.799861551910276   ,    0.0,   15.0, 
+Iva xanth     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Juniperus     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Lamium        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Lathyrus      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Ligustrum     , ok     , lstm_forecast,        3088.0,       1324.0,  0.060071423533724286,  0.2768392945573047  , -0.01102527708117984  ,    0.0,    8.0, 
+Lonicera      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Lotus         , ok     , lstm_forecast,        3088.0,       1324.0,  0.19002111558732085 ,  0.9074141448508586  , -0.031162891784763058 ,    0.0,   24.0, 
+Lupinus       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Luzula        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=7<50
+Lycopodium    , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Lygustrum     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=6<50
+Magnolia      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Matricaria    , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=8<50
+Matricharia   , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=3<50
+Medicago      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=7<50
+Meercurialis  , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Melandrium    , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=5<50
+Melilotis     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=20<50
+Melilotus     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=7<50
+Mentha        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Mercurialis   , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Mercuriallia  , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Morus         , ok     , lstm_forecast,        3088.0,       1324.0,  0.9169536895326865  ,  1.9940847644274817  , 0.00593143936190399   ,    0.0,  254.0, 
+Narcissus     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Narcussus     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Nicotiana     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Papaver       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=7<50
+Petunia       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Phacelia      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Picea         , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Pinus         , ok     , lstm_forecast,        3088.0,       1324.0,  1.1356790955276919  ,  5.328404221124173   , 0.02818664289279127   ,    0.0,  144.0, 
+Pinus/Abies   , ok     , lstm_forecast,        3088.0,       1324.0,  0.29313505453893246 ,  0.3464955571283556  , 0.0                   ,    0.0,   32.0, 
+Poa           , ok     , lstm_forecast,        3088.0,       1324.0,  2.386102635687037   ,  5.255426137483056   , -0.16047492299613242  ,    0.0,   52.0, 
+Poaceae       , ok     , lstm_forecast,        3088.0,       1324.0,  3.9812927119667063  ,  6.858753015538359   , -0.28323884872872385  ,    0.0,  231.0, 
+Potentilla    , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=5<50
+Primula       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=18<50
+Prunus        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=11<50
+Ranunculuis   , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=7<50
+Ranunculus    , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=6<50
+Reseda        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=3<50
+Rhus glabra   , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Ricinus       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Robinia       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=7<50
+Senecio       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=28<50
+Sinapis       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=5<50
+Siringa       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=5<50
+Solidago      , ok     , lstm_forecast,        3088.0,       1324.0,  0.0811793436109879  ,  0.18825172132561185 , -0.1802418329905371   ,    0.0,    5.0, 
+Spirea        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=10<50
+Syringa       , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=6<50
+Tagetes patula, skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Taraxacum     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=28<50
+Thuja         , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Trifolium     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=26<50
+Trifolium r.  , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=5<50
+Tsuga         , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=0<50
+Tulipa        , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Tusilago      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Typha         , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=9<50
+Verbascum     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=19<50
+Viola         , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=2<50
+Vitis         , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=1<50
+Xanthium      , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=6<50
+ligustrum     , skipped,              ,              ,             ,                      ,                      ,                       ,       ,       , nonzero_train_samples=9<50

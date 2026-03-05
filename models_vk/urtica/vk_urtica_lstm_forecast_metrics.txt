@@ -1,0 +1,17 @@
+dataset: vk
+target: Urtica
+scenario: lstm_forecast
+run_date: 2026-03-02T09:45:40.920745
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 12.9413
+rmse: 23.6372
+r2: 0.2219
+min: 0.000
+median: 4.000
+max: 569.000

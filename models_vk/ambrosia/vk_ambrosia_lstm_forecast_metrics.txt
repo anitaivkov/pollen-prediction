@@ -1,0 +1,17 @@
+dataset: vk
+target: Ambrosia
+scenario: lstm_forecast
+run_date: 2026-03-02T09:40:36.919979
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 22.2799
+rmse: 51.9751
+r2: 0.3841
+min: 0.000
+median: 0.000
+max: 1099.000

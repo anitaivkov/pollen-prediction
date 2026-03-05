@@ -1,0 +1,17 @@
+dataset: vk
+target: Fraxinus
+scenario: lstm_forecast
+run_date: 2026-03-02T09:43:37.411100
+date_range: 2005-02-22 to 2023-10-16
+rows: 4419
+features: 8
+seq_len: 7
+horizon: 1
+train_samples: 3088
+test_samples: 1324
+mae: 2.2129
+rmse: 5.0433
+r2: -0.0050
+min: 0.000
+median: 0.000
+max: 182.000
